@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
 		t.dateTime('deletedAt').nullable();
 
 		t.string('label').notNull();
-		t.string('uri').notNull();
+		t.string('url').notNull();
 		t.integer('order').nullable();
 		t.integer('userId')
 			.unsigned()
